@@ -54,10 +54,6 @@ const PostMetas = styled("div")`
     color: ${colors.grey600};
 `
 
-const PostAuthor = styled("div")`
-    margin: 0;
-`
-
 const PostDate = styled("div")`
     margin: 0;
 `
@@ -100,9 +96,6 @@ const PostCard = ({ author, category, date, title, description, uid}) => (
             Read more <span>&#8594;</span>
         </PostCardAction>
         <PostMetas>
-            <PostAuthor>
-                {author}
-            </PostAuthor>
             <PostDate>
                 <Moment format="MMMM D, YYYY">{date}</Moment>
             </PostDate>
