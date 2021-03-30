@@ -9,13 +9,11 @@ import Button from "components/_ui/Button";
 import Layout from "components/Layout";
 
 const ProjectHeroContainer = styled("div")`
-    background: ${colors.grey200};
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
     position: relative;
-    padding-top: 2.25em;
     margin-bottom: 3.5em;
 
     img {
@@ -40,6 +38,21 @@ const ProjectBody = styled("div")`
         img {
             width: 100%;
         }
+    }
+`
+const ProjectBodyText = styled("div")`
+a {
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+
+    &:nth-of-type(1) { color: ${colors.blue500}; }
+    
+    &:hover {
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+
+        &:nth-of-type(1) { color: ${colors.blue600};    background-color: ${colors.blue200};}
+
     }
 `
 
@@ -101,7 +114,9 @@ const Project = ({ project, meta }) => {
                     </ProjectHeroContainer>
                 )}
                 <ProjectBody>
-                    {RichText.render(project.project_description)}
+                    <ProjectBodyText>
+                        {RichText.render(project.project_description)}
+                    </ProjectBodyText>
                     <WorkLink to={"/work"}>
                         <Button className="Button--secondary">
                             See other work
