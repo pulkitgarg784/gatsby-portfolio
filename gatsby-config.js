@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Pulkit Garg | Personal Portfolio Page`,
-        description: `Pulkit garg's personal portfolio website.`,
+        description: `Pulkit Garg's personal portfolio website.`,
     author: `Pulkit Garg`,
   },
   plugins: [
