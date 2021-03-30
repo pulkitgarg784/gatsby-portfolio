@@ -76,10 +76,8 @@ const PostBody = styled("div")`
 const PostMetas = styled("div")`
     max-width: 550px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2em;
-    justify-content: space-between;
+    margin-bottom:30px;
+    text-align: center;
     font-size: 0.85em;
     color: ${colors.grey600};
 `
@@ -141,9 +139,6 @@ const Post = ({ post, meta }) => {
                     {RichText.render(post.post_title)}
                 </PostTitle>
                 <PostMetas>
-                    <PostAuthor>
-                        {post.post_author}
-                    </PostAuthor>
                     <PostDate>
                         <Moment format="MMMM D, YYYY">{post.post_date}</Moment>
                     </PostDate>
