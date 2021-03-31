@@ -18,6 +18,7 @@ const ProjectHeroContainer = styled("div")`
 
     img {
         max-width: 600px;
+        width: 100%;
     }
 `
 
