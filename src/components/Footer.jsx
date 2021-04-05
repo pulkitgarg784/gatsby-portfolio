@@ -45,7 +45,7 @@ const FooterAuthor = styled("a")`
 
 const Footer = () => (
     <FooterContainer>
-        <FooterAuthor>
+        <FooterAuthor href = "https://github.com/pulkitgarg784/gatsby-portfolio">
             Made with ♥ by Pulkit Garg
         </FooterAuthor>
     </FooterContainer>

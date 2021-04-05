@@ -68,8 +68,8 @@ const WorkAction = styled(Link)`
     text-decoration: none;
     color: currentColor;
     transition: all 150ms ease-in-out;
-    margin-left: auto;
-
+    margin: 0 auto;
+    margin-top:20px;
     @media(max-width:${dimensions.maxwidthTablet}px) {
        margin: 0 auto;
     }
@@ -145,18 +145,11 @@ const RenderBody = ({ home, projects, meta }) => (
             </a>
         </Hero>
         <Section>
-            {projects.map((project, i) => (
-                <ProjectCard
-                    key={i}
-                    category={project.node.project_category}
-                    title={project.node.project_title}
-                    description={project.node.project_preview_description}
-                    thumbnail={project.node.project_preview_thumbnail}
-                    uid={project.node._meta.uid}
-                />
-            ))}
             <WorkAction to={"/work"}>
-                See more projects <span>&#8594;</span>
+                See my projects <span>&#8594;</span>
+            </WorkAction>
+            <WorkAction to={"https://pulkitgarg.itch.io/"}>
+                See my games <span>&#8594;</span>
             </WorkAction>
         </Section>
         <Section>
