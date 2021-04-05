@@ -9,6 +9,7 @@ import dimensions from "styles/dimensions";
 import About from "components/About";
 import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
+import Button from "components/_ui/Button";
 
 const Hero = styled("div")`
     padding-top: 2.5em;
@@ -136,7 +137,12 @@ const RenderBody = ({ home, projects, meta }) => (
             <>
                 {RichText.render(home.hero_title)}
             </>
-
+            <a href={home.hero_button_link.url}
+               target="_blank" rel="noopener noreferrer">
+                <Button>
+                    {RichText.render(home.hero_button_text)}
+                </Button>
+            </a>
         </Hero>
         <Section>
             {projects.map((project, i) => (
