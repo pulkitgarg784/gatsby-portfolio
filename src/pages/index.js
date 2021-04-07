@@ -148,9 +148,6 @@ const RenderBody = ({ home, projects, meta }) => (
             <WorkAction to={"/work"}>
                 See my projects <span>&#8594;</span>
             </WorkAction>
-            <WorkAction to={"https://pulkitgarg.itch.io/"}>
-                See my games <span>&#8594;</span>
-            </WorkAction>
         </Section>
         <Section>
             {RichText.render(home.about_title)}
