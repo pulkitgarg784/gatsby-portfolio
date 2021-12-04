@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 
 const ProjectCardContainer = styled(Link)`
     display: grid;
-    grid-template-columns: 4fr 7fr;
+    grid-template-columns: 4fr 4fr;
     box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.06);
     margin-bottom: 4em;
     transition: all 150ms ease-in-out;
