@@ -92,7 +92,7 @@ const Header = () => (
                 </Link>
                 <Link
                     activeClassName="Link--is-active"
-                    to="https://artstation.com/pulkitgarg">
+                    to={{ pathname: "https://artstation.com/pulkitgarg" }} target="_blank" >
                     Art
                 </Link>
             </HeaderLinks>
