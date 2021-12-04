@@ -90,11 +90,10 @@ const Header = () => (
                     to="/work">
                     Work
                 </Link>
-                <Link
+                <a
                     activeClassName="Link--is-active"
-                    to={{ pathname: "https://artstation.com/pulkitgarg" }} target="_blank" >
-                    Art
-                </Link>
+                    href ="https://artstation.com/pulkitgarg" target="_blank" >Art
+                </a>
             </HeaderLinks>
         </HeaderContent>
     </HeaderContainer>
