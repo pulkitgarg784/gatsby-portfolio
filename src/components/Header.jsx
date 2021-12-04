@@ -90,6 +90,11 @@ const Header = () => (
                     to="/work">
                     Work
                 </Link>
+                <Link
+                    activeClassName="Link--is-active"
+                    to="https://artstation.com/pulkitgarg">
+                    Art
+                </Link>
             </HeaderLinks>
         </HeaderContent>
     </HeaderContainer>
