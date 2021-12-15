@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import dimensions from "styles/dimensions";
 import { RichText } from "prismic-reactjs";
 import PropTypes from "prop-types";
+import colors from "styles/colors";
 
 const AboutContainer = styled("div")`
     padding-top: 1em;
@@ -61,9 +62,21 @@ const AboutBio = styled("div")`
     padding-bottom: 3em;
     max-width: 480px;
 
-
     @media(max-width: ${dimensions.maxwidthMobile}px) {
         grid-row: 2;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all 100ms ease-in-out;
+
+        color: ${colors.blue500};
+        &:hover {
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            color: ${colors.blue600};
+            background-color: ${colors.blue200}
+           }
     }
 `
 
