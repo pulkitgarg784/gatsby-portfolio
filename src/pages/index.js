@@ -25,8 +25,10 @@ const Hero = styled("div")`
         margin-bottom: 1em;
 
         a {
-            text-decoration: none;
-            transition: all 100ms ease-in-out;
+            text-decoration: underline solid;
+            text-decoration-thickness: 5px;
+
+            transition: all 200ms ease-in-out;
 
             &:nth-of-type(1) { color: ${colors.green500}; }
             &:nth-of-type(2) { color: ${colors.orange500}; }
@@ -36,6 +38,8 @@ const Hero = styled("div")`
 
             &:hover {
                 cursor: pointer;
+                text-decoration: underline solid;
+                text-decoration-color: transparent;
                 transition: all 200ms ease-in-out;
 
                 &:nth-of-type(1) { color: ${colors.green600};    background-color: ${colors.green200};}
